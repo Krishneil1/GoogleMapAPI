@@ -51,13 +51,14 @@
         administrative_area_level_1: 'long_name',
         postal_code: 'short_name',
       };
-
+		
+		
       function initAutocomplete() {
         // Create the autocomplete object, restricting the search to geographical
         // location types.
         autocomplete = new google.maps.places.Autocomplete(
             /** @type {!HTMLInputElement} */(document.getElementById('street_number')),
-            {types: ['geocode']});
+            {types: ['geocode'], componentRestrictions: {country: 'au'}});
 
         // When the user selects an address from the dropdown, populate the address
         // fields in the form.
@@ -103,7 +104,7 @@
         }
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_Qf8TYV9CLEngR4Fioj-S9_QVX9amC7Y&libraries=places&callback=initAutocomplete"
-        async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_Qf8TYV9CLEngR4Fioj-S9_QVX9amC7Y&libraries=places&callback=initAutocomplete" async defer></script>
+		
    </body>
 </html>
