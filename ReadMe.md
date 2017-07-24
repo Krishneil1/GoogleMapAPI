@@ -1,2 +1,2 @@
 ## Use Google MAP API ##
-This was a Developer Test. Demostrates how to use Google Maps API
+This was a Developer Test. Demonstrates how to use Google Maps API
